@@ -1,0 +1,161 @@
+.contact {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background-color: black;
+}
+.contact > h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 20px 0;
+}
+.contact > p {
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+  color: #b7ab98;
+}
+.contact_links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.email {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0;
+}
+.email > h2 {
+  font-size: 3rem;
+}
+.email > a {
+  color: #000;
+}
+.email > a:hover {
+  transform: scale(1.4);
+  transition: 0.5s ease-in-out;
+}
+.email:hover {
+  background-color: #ff5f1f;
+  color: #000;
+  transition: 0.5s ease-in-out;
+}
+@media (max-width: 650px) {
+  .email > a:hover {
+    transition: none;
+    transform: none;
+  }
+}
+.linkedin {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0;
+}
+.linkedin > h2 {
+  font-size: 3rem;
+}
+.linkedin > a {
+  color: #000;
+}
+.linkedin > a:hover {
+  transform: scale(1.4);
+  transition: 0.5s ease-in-out;
+}
+.linkedin:hover {
+  background-color: #ff5f1f;
+  color: #000;
+  transition: 0.5s ease-in-out;
+}
+@media (max-width: 650px) {
+  .linkedin > a:hover {
+    transition: none;
+    transform: none;
+  }
+}
+.instagram {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0;
+}
+.instagram > h2 {
+  font-size: 3rem;
+}
+.instagram > a {
+  color: #000;
+}
+.instagram > a:hover {
+  transform: scale(1.4);
+  transition: 0.5s ease-in-out;
+}
+.instagram:hover {
+  background-color: #ff5f1f;
+  color: #000;
+  transition: 0.5s ease-in-out;
+}
+@media (max-width: 650px) {
+  .instagram > a:hover {
+    transition: none;
+    transform: none;
+  }
+}
+.github {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0;
+}
+.github > h2 {
+  font-size: 3rem;
+}
+.github > a {
+  color: #000;
+}
+.github > a:hover {
+  transform: scale(1.4);
+  transition: 0.5s ease-in-out;
+}
+.github:hover {
+  background-color: #ff5f1f;
+  color: #000;
+  transition: 0.5s ease-in-out;
+}
+@media (max-width: 450px) {
+  .email > h2 {
+    font-size: 2.5rem;
+  }
+  .linkedin > h2 {
+    font-size: 2.5rem;
+  }
+  .instagram > h2 {
+    font-size: 2.5rem;
+  }
+  .github > h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .github > a:hover {
+    transition: none;
+    transform: none;
+  }
+}

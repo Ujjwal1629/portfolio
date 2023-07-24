@@ -1,0 +1,93 @@
+@font-face {
+  font-family: myFirstFont2;
+  src: url("/TRYGrtsk-BoldMegaBackslant-BF6426552406d02.ttf");
+}
+@font-face {
+  font-family: myFirstFont3;
+  src: url("/TRYGrtsk-ExtraLightGiga-BF6426553772078.ttf");
+}
+.fun {
+  width: 100%;
+  height: 100%;
+}
+.fun_head {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.fun_head > h1 {
+  font-size: 5rem;
+  animation: scrollText 10s linear infinite;
+  text-align: center;
+  display: inline-block;
+  padding-left: 100%;
+  text-transform: uppercase;
+  font-family: myFirstFont2;
+}
+.fun_head > p {
+  text-align: center;
+  font-family: myFirstFont3;
+}
+@keyframes scrollText {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+.fun_content {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fun_games {
+  padding: 100px 0px;
+}
+.fun_games > h2 {
+  font-size: 2rem;
+  font-family: myFirstFont2;
+}
+.fun_games > p {
+  font-size: 1.5rem;
+  font-family: myFirstFont3;
+}
+.fun_games > button {
+  font-size: 1.5rem;
+  background-color: #111;
+  color: #b7ab98;
+  border: 1px solid #b7ab98;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0.7;
+}
+.fun_games > button:hover {
+  opacity: 1;
+}
+.fun_games > img {
+  object-fit: cover;
+}
+@media (max-width: 700px) {
+  .fun_head > h1 {
+    font-size: 3rem;
+  }
+  .fun_content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .fun_games {
+    padding: 50px 0;
+  }
+  .fun_games:first-child {
+    padding-top: 100px;
+  }
+  .fun_games > h2 {
+    font-size: 1.7rem;
+  }
+}

@@ -1,0 +1,123 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("/AvanteGo-lL55.ttf");
+}
+
+.skills_tab {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+  background-color: #111;
+  background-image: url(../video/skills.png);
+
+  margin: auto;
+  object-fit: contain;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.skill_heading {
+  width: 60%;
+  margin: auto;
+  font-size: 5.5rem;
+  font-weight: bold;
+  padding: 4rem 0;
+  position: relative;
+  font-family: myFirstFont, sans-serif;
+  z-index: 2;
+  animation: glitch 1s linear infinite;
+  color: #ff5f1f;
+}
+.skills_content {
+  /* margin: auto; */
+  width: 60%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 30px;
+}
+.skills_content > img {
+  border-radius: 50px;
+  object-fit: contain;
+  width: 80px;
+  height: 80px;
+}
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(50deg);
+  }
+}
+
+.skill_heading:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-53deg);
+  }
+}
+
+.skill_heading:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(51deg);
+  }
+}
+.skill_img {
+  top: 0;
+}
+@media (max-width: 700px) {
+  .skills_tab {
+    width: 100%;
+    background-color: #111;
+    background-image: none;
+  }
+  .skill_heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .skills_content {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .skills_content > img {
+    align-items: center;
+  }
+}
